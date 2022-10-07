@@ -1,4 +1,4 @@
-# Naive-Bayes Assignment
+# Naive-Bayes HamSpam Classifier
 
 This is an implementation of a Naive-Bayes Classifier, using the data in the HamSpam folder. I first implemented my Naive-Bayes model, and then further tried to optimize it by removing stop-words (see below). 
 
