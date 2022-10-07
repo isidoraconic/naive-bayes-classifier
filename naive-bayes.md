@@ -1,12 +1,12 @@
 # Naive-Bayes Assignment
 
-#### Isidora Conic - Machine Learning (CS 6140)
+This is an implementation of a Naive-Bayes Classifier, using the data in the HamSpam folder. I first implemented my Naive-Bayes model, and then further tried to optimize it by removing stop-words (see below). 
 
-For this assignment, I first implemented my Naive-Bayes model, and then further tried to optimize it by removing stop-words (see below). 
+This classifier aims to classify emails as Ham (normal email, not spam) or Spam (a spam email) - binary classification.
 
 ## (1) Naive-Bayes Classifier
 
-The first iteration of my classifier was as outlined in class. I further optimized the hyperparameters, `v` (total vocabulary words; total number of words in the english language) as well as `alpha` (used for smoothing). I found that the best values for these paramters were as follows:
+The first iteration of my classifier implements a Naive Bayes Classifier. It considers each word contained in an email to be independent opf the other (which in real life is a big assumption but we maintain it for this model). In this case, a Naive Bayes model predicts/estimates the probability of a message being ham or spam based on the joint probabilistic distributions of the appreance of certain words in the email. I further optimized the hyperparameters, `v` (total vocabulary words; total number of words in the english language) as well as `alpha` (used for smoothing). I found that the best values for these paramters were as follows:
 
 ​	`v = 170000`  
 
